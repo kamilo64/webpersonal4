@@ -1,0 +1,56 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block background %}{% static 'core/img/contacto1.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Contacto</h1>
+    <span class="subheading">Nuestros contactos</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid lobo" 
+            src="{% static 'core/img/crlos.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading"> <FONT COLOR="green">CARLOS DIAZ</FONT> | ADMINISTRADOR</h2>   
+        <p><b>Telefono | 313 418 331 7 </b></p>
+        <p><b>Correo electronico | chdiaz73@misena.edu.co</b></p>
+
+       
+    </div>
+</div>
+<br>
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid lobo" 
+            src="{% static 'core/img/thlor.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading"> <FONT COLOR="green">THEYLOR </FONT> | ADMINISTRADOR</h2>   
+        <p><b>Telefono | 318 732 455 2</b></p>
+        <p><b>Correo electronico | tsnarvaez8@misena.edu.co</b></p>
+
+       
+    </div>
+</div>
+<br>
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid lobo" 
+            src="{% static 'core/img/camlo.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading"> <FONT COLOR="green">CAMILO DURAN</FONT> | ADMINISTRADOR</h2>   
+        <p><b>Telefono | 320 394 840 0</b></p>
+        <p><b>Correo electronico | ccduran0@misena.edu.co </b></p>
+
+       
+    </div>
+</div>
+{% endblock %}

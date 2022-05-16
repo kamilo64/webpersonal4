@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% static 'core/img/inicio3.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Nuestro Proyecto</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid lobo" 
+            src="{% static 'core/img/loggo.jpeg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading"> <FONT COLOR="green">GANOAPP</FONT></h2>   
+        <p>Es un sistema informático que
+            permita gestionar y controlar el registro de bovinos, con el
+            firme propósito de agilizar los procedimientos y así facilitar las actividades en el campo agrícola...</p>
+        <p>La preocupación central del ganadero, como cualquier otro empresario, es
+            cómo lograr un mayor ingreso económico, por lo que la tecnología que se
+            desarrolle debe proveer valor agregado a las actividades del productor. </p>
+        <p> Con la
+            utilización de un sistema automatizado se incrementa la confiabilidad de los
+            resultados, se humaniza el trabajo y disminuye el tiempo de procesamiento de
+            la información.</p>
+    </div>
+</div>
+{% endblock %}
